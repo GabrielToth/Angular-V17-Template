@@ -1,0 +1,4 @@
+* text=crlf
+*.ts text eol=crlf
+*.html text eol=crlf
+*.scss text eol=crlf
