@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angular V17 Template</title>
     <style>
-        /* Styles here */
+        h1 {color: #c21}
     </style>
 </head>
 <body>
