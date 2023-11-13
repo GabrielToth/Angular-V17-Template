@@ -18,14 +18,14 @@ npm install -g @angular/cli
 
 ## Step 2 - Clone the template
 
-If you are using GitHub Desktop:
+### If you are using GitHub Desktop:
 
 1. On GitHub Desktop, click on "File" and then "Clone Repository."
 2. Paste the URL of the repository you copied earlier into the "Repository URL" box.
 3. Choose the local directory where you want to clone the repository.
 4. Click the "Clone" button to initiate the cloning process.
 
-If you are using only Git Bash:
+### If you are using only Git Bash:
 
 1. Open Git Bash in the directory where you want to clone the repository.
 2. Enter the command `git clone` followed by the URL you copied:
@@ -37,8 +37,84 @@ If you are using only Git Bash:
    cd Angular-V17-Template
    ```
 
-## Boas práticas
+## Step 3 - Install all packages
 
-Branchs: GitFlow
+Install all packages and dependences from package.json:
 
-Folders Structural Tree:
+```
+npm i
+```
+
+## Step 4 - Change project name
+
+In Visual Studio Code open Search Tool, search for:
+
+```
+put-your-project-name  
+```
+
+On replace type the name of your project.
+
+## Folder Structure
+
+The project follows a specific folder structure to ensure organization and clarity. Please adhere to the following guidelines:
+
+- **`/src`**: Contains the source code of the project.
+
+  - **`/app`**: Main application code.
+
+    - **`/core`** : This folder often contains core functionalities that are not directly related to a specific feature or page. It's a good place to put services, guards, interceptors, and other pieces of code that are critical to the application but not tied to a particular feature.
+
+      * **`/auth`** : This folder contain authentication-related code, such as services or guards responsible for handling user authentication and authorization.
+      * **`/guards`** : Guards are used to control access to certain routes in your application. They can be placed here to keep the code organized.
+      * **`/interceptors`** : Interceptors can be used to modify HTTP requests or responses globally. Placing them in this folder helps maintain a clean structure.
+      * **`/layout`** : This might be used for components or services related to the overall layout of your application, such as a navigation bar or footer.
+      * **`/models`** : This folder can contain data models used throughout the application. Defining models in one place makes it easier to manage and maintain consistency.
+      * **`/services`** : Services that are shared across multiple features or components can be placed here. These could include data services, utility services, etc.
+
+    * **`/features`** : This folder is typically used for organizing pages or features of your application. Each feature might have its own subfolder containing components, services, and other files specific to that feature.
+    * **`/shared`** : This folder is for components, services, or other pieces of code that are shared across multiple features. It helps to avoid duplication and ensures consistency in the application.
+  - **`/assets`**: Resources like images or fonts.
+  - **`/styles`**: Stylesheets.
+  - **`/stories`**: Storybook for automatic components documentation. Try: `ng storybook`
+- **`/docs`**: Documentation files.
+- **`/tests`**: Unit and integration tests.
+
+## Project Organization
+
+To maintain consistency and ease collaboration, the project follows the GitFlow branching model. The main branches are:
+
+- **`main`**: Represents the production-ready code. Only merge into this branch after thorough testing.
+- **`develop`**: The main branch for ongoing development. Feature branches branch off from here, and completed features are merged back.
+- **`feature/branch-name`**: Feature branches for new features or enhancements. Always branch off from `develop`.
+- **`bugfix/branch-name`**: Bugfix branches for resolving issues. Always branch off from `develop`.
+- **`hotfix/branch-name`**: Hotfix branches for critical fixes in the production code. Branch off from `main`.
+
+## Commit and Push Guidelines
+
+To maintain a clean and well-documented version history, follow these guidelines:
+
+1. **Feature Development:**
+
+   - Create a new branch for each feature or enhancement.
+   - Use clear and concise commit messages.
+   - Regularly push changes to the remote repository.
+2. **Bug Fixes:**
+
+   - Create a new branch for each bug fix.
+   - Include a reference to the issue being addressed in your commit message.
+   - Push changes promptly.
+3. **Code Review:**
+
+   - Before merging into `develop` or `main`, ensure that your code has been reviewed.
+   - Address feedback and retest.
+4. **GitFlow Model:**
+
+   - Strictly adhere to the GitFlow branching model.
+   - Respect the roles and responsibilities defined by GitFlow.
+
+By adhering to these guidelines, we can maintain a well-organized and collaborative development environment. If you have any questions or encounter issues, please refer to this documentation or reach out to the project team.
+
+---
+
+Feel free to tailor this draft to fit the specifics of your project and documentation style.
