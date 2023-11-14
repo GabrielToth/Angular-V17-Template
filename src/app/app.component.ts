@@ -12,5 +12,5 @@ import { MenuComponent } from './shared/menu/menu.component';
     imports: [CommonModule, RouterOutlet, FooterComponent, MenuComponent],
 })
 export class AppComponent {
-    title = 'Angular-Template';
+    title = 'Angular-V17-Template';
 }

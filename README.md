@@ -1,27 +1,120 @@
-# AngularTemplate
+# Angular V17 Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+The Angular V17 Template is an advanced and comprehensive tool for efficiently bootstrapping Angular projects. Built for the latest version of Angular, this template offers a well-organized directory structure, ready for scalable development. Additionally, it features an integrated system to handle error pages and site maintenance states, providing a robust development experience and easing the creation of modern web applications. With clear requirements and simple installation, the Angular V17 Template is the ideal choice for developers seeking a solid and flexible foundation for their Angular projects.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Node Package Manager 18.10.x or later installed in your system.
+  * Look at the [get npm guide](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm) for more info.
+* Basic knowledge in [Angular](https://angular.io/).
 
-## Code scaffolding
+## Step 1 - Install the Angular CLI
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You are first going to need to install the Angular CLI (Command Line Interface) tool. The CLI helps you to start new Angular project as well as assist you during development. In your CMD (terminal) type:
 
-## Build
+```
+npm install -g @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Step 2 - Clone the template
 
-## Running unit tests
+### If you are using GitHub Desktop:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. On GitHub Desktop, click on "File" and then "Clone Repository."
+2. Paste the URL of the repository you copied earlier into the "Repository URL" box.
+3. Choose the local directory where you want to clone the repository.
+4. Click the "Clone" button to initiate the cloning process.
 
-## Running end-to-end tests
+### If you are using only Git Bash:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Open Git Bash in the directory where you want to clone the repository.
+2. Enter the command `git clone` followed by the URL you copied:
+   ```
+   git clone https://github.com/GabrielToth/Angular-V17-Template
+   ```
+3. Use the `cd` command to enter the directory of the cloned repository:
+   ```
+   cd Angular-V17-Template
+   ```
 
-## Further help
+## Step 3 - Install all packages
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Install all packages and dependences from package.json:
+
+```
+npm i
+```
+
+## Step 4 - Change project name
+
+In Visual Studio Code open Search Tool, search for:
+
+```
+put-your-project-name  
+```
+
+On replace type the name of your project.
+
+## Folder Structure
+
+The project follows a specific folder structure to ensure organization and clarity. Please adhere to the following guidelines:
+
+- **`/src`**: Contains the source code of the project.
+
+  - **`/app`**: Main application code.
+
+    - **`/core`** : This folder often contains core functionalities that are not directly related to a specific feature or page. It's a good place to put services, guards, interceptors, and other pieces of code that are critical to the application but not tied to a particular feature.
+
+      * **`/auth`** : This folder contain authentication-related code, such as services or guards responsible for handling user authentication and authorization.
+      * **`/guards`** : Guards are used to control access to certain routes in your application. They can be placed here to keep the code organized.
+      * **`/interceptors`** : Interceptors can be used to modify HTTP requests or responses globally. Placing them in this folder helps maintain a clean structure.
+      * **`/layout`** : This might be used for components or services related to the overall layout of your application, such as a navigation bar or footer.
+      * **`/models`** : This folder can contain data models used throughout the application. Defining models in one place makes it easier to manage and maintain consistency.
+      * **`/services`** : Services that are shared across multiple features or components can be placed here. These could include data services, utility services, etc.
+
+    * **`/features`** : This folder is typically used for organizing pages or features of your application. Each feature might have its own subfolder containing components, services, and other files specific to that feature.
+    * **`/shared`** : This folder is for components, services, or other pieces of code that are shared across multiple features. It helps to avoid duplication and ensures consistency in the application.
+  - **`/assets`**: Resources like images or fonts.
+  - **`/styles`**: Stylesheets.
+  - **`/stories`**: Storybook for automatic components documentation. Try: `ng storybook`
+- **`/docs`**: Documentation files.
+- **`/tests`**: Unit and integration tests.
+
+## Project Organization
+
+To maintain consistency and ease collaboration, the project follows the GitFlow branching model. The main branches are:
+
+- **`main`**: Represents the production-ready code. Only merge into this branch after thorough testing.
+- **`develop`**: The main branch for ongoing development. Feature branches branch off from here, and completed features are merged back.
+- **`feature/branch-name`**: Feature branches for new features or enhancements. Always branch off from `develop`.
+- **`bugfix/branch-name`**: Bugfix branches for resolving issues. Always branch off from `develop`.
+- **`hotfix/branch-name`**: Hotfix branches for critical fixes in the production code. Branch off from `main`.
+
+## Commit and Push Guidelines
+
+To maintain a clean and well-documented version history, follow these guidelines:
+
+1. **Feature Development:**
+
+   - Create a new branch for each feature or enhancement.
+   - Use clear and concise commit messages.
+   - Regularly push changes to the remote repository.
+2. **Bug Fixes:**
+
+   - Create a new branch for each bug fix.
+   - Include a reference to the issue being addressed in your commit message.
+   - Push changes promptly.
+3. **Code Review:**
+
+   - Before merging into `develop` or `main`, ensure that your code has been reviewed.
+   - Address feedback and retest.
+4. **GitFlow Model:**
+
+   - Strictly adhere to the GitFlow branching model.
+   - Respect the roles and responsibilities defined by GitFlow.
+
+By adhering to these guidelines, we can maintain a well-organized and collaborative development environment. If you have any questions or encounter issues, please refer to this documentation or reach out to the project team.
+
+---
+
+Feel free to tailor this draft to fit the specifics of your project and documentation style.
