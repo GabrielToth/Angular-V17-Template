@@ -11,6 +11,4 @@ import { MenuComponent } from './shared/menu/menu.component';
     styleUrls: ['./app.component.scss'],
     imports: [CommonModule, RouterOutlet, FooterComponent, MenuComponent],
 })
-export class AppComponent {
-    title = 'Angular-V17-Template';
-}
+export class AppComponent {}

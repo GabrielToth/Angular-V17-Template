@@ -13,11 +13,12 @@ export const routes: Routes = [
     {
         path: '**',
         pathMatch: 'full',
-        component: ErrorComponent,
-        canActivate: [maintenanceGuard],
+        component: MaintenanceComponent,
     },
     {
-        path: 'maintenance',
-        component: MaintenanceComponent,
+        path: '**',
+        pathMatch: 'full',
+        component: ErrorComponent,
+        canActivate: [maintenanceGuard],
     },
 ];
