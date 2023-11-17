@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing'
 
-import { SiteStatusService } from './site-status.service';
+import { SiteStatusService } from './site-status.service'
 
 describe('SiteStatusService', () => {
-  let service: SiteStatusService;
+    let service: SiteStatusService
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(SiteStatusService);
-  });
+    beforeEach(() => {
+        TestBed.configureTestingModule({})
+        service = TestBed.inject(SiteStatusService)
+    })
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+    it('should be created', () => {
+        expect(service).toBeTruthy()
+    })
+})

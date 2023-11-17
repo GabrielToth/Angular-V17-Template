@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { TermOfPrivacyComponent } from './term-of-privacy.component';
+import { TermOfPrivacyComponent } from './term-of-privacy.component'
 
 describe('TermOfPrivacyComponent', () => {
-  let component: TermOfPrivacyComponent;
-  let fixture: ComponentFixture<TermOfPrivacyComponent>;
+    let component: TermOfPrivacyComponent
+    let fixture: ComponentFixture<TermOfPrivacyComponent>
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [TermOfPrivacyComponent]
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [TermOfPrivacyComponent],
+        }).compileComponents()
+
+        fixture = TestBed.createComponent(TermOfPrivacyComponent)
+        component = fixture.componentInstance
+        fixture.detectChanges()
     })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(TermOfPrivacyComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    it('should create', () => {
+        expect(component).toBeTruthy()
+    })
+})

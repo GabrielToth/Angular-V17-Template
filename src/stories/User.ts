@@ -1,2 +1,4 @@
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface User {}
+export interface User {
+    name: string
+}

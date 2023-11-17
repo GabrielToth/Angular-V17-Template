@@ -4,7 +4,7 @@ The Angular V17 Template is an advanced and comprehensive tool for efficiently b
 
 ## Prerequisites
 
-* Node Package Manager 18.10.x or later installed in your system.
+* Node Package Manager 18.10.0 or later installed in your system.
   * Look at the [get npm guide](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm) for more info.
 * Basic knowledge in [Angular](https://angular.io/).
 

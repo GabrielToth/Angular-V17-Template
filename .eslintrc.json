@@ -1,13 +1,9 @@
 {
     "root": true,
-    "ignorePatterns": [
-        "projects/**/*"
-    ],
+    "ignorePatterns": ["projects/**/*"],
     "overrides": [
         {
-            "files": [
-                "*.ts"
-            ],
+            "files": ["*.ts"],
             "extends": [
                 "eslint:recommended",
                 "plugin:@typescript-eslint/recommended",
@@ -31,13 +27,18 @@
                         "prefix": "app",
                         "style": "kebab-case"
                     }
+                ],
+                "prettier/prettier": [
+                    "error",
+                    {
+                        "singleQuote": true,
+                        "semi": false
+                    }
                 ]
             }
         },
         {
-            "files": [
-                "*.html"
-            ],
+            "files": ["*.html"],
             "extends": [
                 "plugin:@angular-eslint/template/recommended",
                 "plugin:@angular-eslint/template/accessibility"
@@ -45,15 +46,9 @@
             "rules": {}
         },
         {
-            "files": [
-                "*.scss"
-            ],
-            "excludedFiles": [
-                "*inline-template-*.component.html"
-            ],
-            "extends": [
-                "plugin:prettier/recommended"
-            ],
+            "files": ["*.scss", "*.css"],
+            "excludedFiles": ["*inline-template-*.component.html"],
+            "extends": ["plugin:prettier/recommended"],
             "rules": {
                 "prettier/prettier": [
                     "error",
@@ -64,7 +59,5 @@
             }
         }
     ],
-    "extends": [
-        "plugin:storybook/recommended"
-    ]
+    "extends": ["plugin:storybook/recommended"]
 }

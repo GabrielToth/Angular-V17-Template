@@ -19,5 +19,19 @@
             "source.fixAll.eslint": true
         },
         "editor.formatOnSave": true
-    }
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "editor.formatOnSave": true
+    },
+    "autoimport.useSemiColon": false,
+    "prettier.semi": false,
+    "javascript.format.semicolons": "remove",
+    "typescript.format.semicolons": "remove",
+    "vs-code-prettier-eslint.prettierLast": true,
+    "cSpell.language": "en,pt,pt_BR",
+    "cSpell.words": ["Parens"]
 }
