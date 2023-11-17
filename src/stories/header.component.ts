@@ -1,11 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core'
 import type { User } from './User'
-import ButtonComponent from './button.component'
 
 @Component({
     selector: 'app-storybook-header',
-    standalone: true,
-    imports: [ButtonComponent],
     template: `<header>
         <div class="storybook-header">
             <div>
