@@ -8,6 +8,7 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "lint": "ng lint --fix",
+        "server": "json-server --watch ./src/assets/data/db.json",
         "storybook": "ng run Angular-V17-Template:storybook",
         "build-storybook": "ng run Angular-V17-Template:build-storybook"
     },
