@@ -74,8 +74,9 @@ The project follows a specific folder structure to ensure organization and clari
 
     * **`/features`** : This folder is typically used for organizing pages or features of your application. Each feature might have its own subfolder containing components, services, and other files specific to that feature.
     * **`/shared`** : This folder is for components, services, or other pieces of code that are shared across multiple features. It helps to avoid duplication and ensures consistency in the application.
+      * **`/components`**: Components.
+      * **`/styles`**: Stylesheets.
   - **`/assets`**: Resources like images or fonts.
-  - **`/styles`**: Stylesheets.
   - **`/stories`**: Storybook for automatic components documentation. Try: `ng storybook`
 - **`/docs`**: Documentation files.
 - **`/tests`**: Unit and integration tests.
