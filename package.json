@@ -34,7 +34,7 @@
         "@angular-eslint/eslint-plugin": "17.0.1",
         "@angular-eslint/eslint-plugin-template": "17.0.1",
         "@angular-eslint/schematics": "17.0.1",
-        "@angular-eslint/template-parser": "17.0.1",
+        "@angular-eslint/template-parser": "17.1.0",
         "@angular/cli": "^17.0.0",
         "@angular/compiler-cli": "^17.0.0",
         "@storybook/addon-essentials": "^7.5.3",
