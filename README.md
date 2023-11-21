@@ -109,17 +109,20 @@ To maintain a clean and well-documented version history, follow these guidelines
    - Regularly push changes to the remote repository.
 2. **Bug Fixes:**
 
-   - Create a new branch for each bug fix.
-   - Include a reference to the issue being addressed in your commit message.
-   - Push changes promptly.
+   * Create a new branch for each bug fix.
+   * Include a reference to the issue being addressed in your commit message.
+   * Use clear and concise commit messages, following the Conventional Commits standard.
+   * Push changes promptly.
 3. **Code Review:**
 
    - Before merging into `develop` or `main`, ensure that your code has been reviewed.
    - Address feedback and retest.
+   - Ensure commit messages follow the Conventional Commits standard.
 4. **GitFlow Model:**
 
    - Strictly adhere to the GitFlow branching model.
    - Respect the roles and responsibilities defined by GitFlow.
+   - Use Conventional Commits standard for commit messages.
 
 By adhering to these guidelines, we can maintain a well-organized and collaborative development environment. If you have any questions or encounter issues, please refer to this documentation or reach out to the project team.
 
