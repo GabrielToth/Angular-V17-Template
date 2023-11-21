@@ -73,9 +73,9 @@ The project follows a specific folder structure to ensure organization and clari
       * **`/services`** : Services that are shared across multiple features or components can be placed here. These could include data services, utility services, etc.
 
     * **`/features`** : This folder is typically used for organizing pages or features of your application. Each feature might have its own subfolder containing components, services, and other files specific to that feature.
-    * **`/shared`** : This folder is for components, services, or other pieces of code that are shared across multiple features. It helps to avoid duplication and ensures consistency in the application.
-      * **`/components`**: Components.
-      * **`/styles`**: Stylesheets.
+    * **`/shared`** : This folder is for components, services, or other pieces of code that are shared across multiple features. It helps to avoid duplication and ensures consistency in the application."
+      * **`/components`**: This directory contains reusable UI components utilized across various features of the application. Organizing components here promotes reusability, maintains consistency in design patterns, and facilitates easier maintenance and development.
+      * **`/styles`**: Housing global and component-specific stylesheets, this directory centralizes the styling resources for the application. Global stylesheets define overarching design principles, while component-specific stylesheets tailor the appearance of individual components, fostering a cohesive and visually appealing user interface.
   - **`/assets`**: Resources like images or fonts.
   - **`/stories`**: Storybook for automatic components documentation. Try: `ng storybook`
 - **`/docs`**: Documentation files.
