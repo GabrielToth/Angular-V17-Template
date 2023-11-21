@@ -77,18 +77,14 @@ The project follows a specific folder structure to ensure organization and clari
 
       * **`/components`**: This directory contains reusable UI components utilized across various features of the application. Organizing components here promotes reusability, maintains consistency in design patterns, and facilitates easier maintenance and development.
       * **`/styles`**: Housing global and component-specific stylesheets, this directory centralizes the styling resources for the application. Global stylesheets define overarching design principles, while component-specific stylesheets tailor the appearance of individual components, fostering a cohesive and visually appealing user interface.
-
   - **`/assets`**: Resources like images, fonts and databases.
 
     - **`/data`**: Houses data-related files or mockups used in the project.
 
       - **`db.json`**: JSON file serving as the database for the json-server mock API. This file contains mock data used for simulating API responses during development.
-
     - **`/images`**: Stores image files used within the application. These include icons, graphics, and other visual elements.
     - **`/fonts`**: Holds font files utilized for typography and styling purposes in the application.
-
   - **`/stories`**: Storybook for automatic components documentation. Try: `ng storybook`
-  
 - **`/docs`**: Documentation files.
 - **`/tests`**: Unit, integration, e2e and other tests.
 
@@ -109,7 +105,7 @@ To maintain a clean and well-documented version history, follow these guidelines
 1. **Feature Development:**
 
    - Create a new branch for each feature or enhancement.
-   - Use clear and concise commit messages.
+   - Use clear and concise commit messages, adhering to the [Conventional Commits standard](https://www.conventionalcommits.org/en/v1.0.0/) (e.g., 'feat:', 'fix:', 'docs:', etc.).
    - Regularly push changes to the remote repository.
 2. **Bug Fixes:**
 
