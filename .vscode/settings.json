@@ -33,5 +33,12 @@
     "typescript.format.semicolons": "remove",
     "vs-code-prettier-eslint.prettierLast": true,
     "cSpell.language": "en,pt,pt_BR",
-    "cSpell.words": ["Parens"]
+    "cSpell.words": [
+        "Parens"
+    ],
+    "[css][html][scss][typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    }
 }

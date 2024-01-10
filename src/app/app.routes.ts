@@ -2,13 +2,13 @@ import { Routes } from '@angular/router'
 import { ErrorComponent } from './features/error/error.component'
 import { HomeComponent } from './features/home/home.component'
 import { MaintenanceComponent } from './features/maintenance/maintenance.component'
-import { maintenanceGuard } from './core/guards/maintenance.guard'
+import { MaintenanceGuard } from './core/guards/maintenance/maintenance.guard'
 
 export const routes: Routes = [
     {
         path: '',
         component: HomeComponent,
-        canActivate: [maintenanceGuard],
+        canActivate: [MaintenanceGuard],
     },
     {
         path: 'maintenance',
@@ -17,7 +17,7 @@ export const routes: Routes = [
     {
         path: 'error',
         component: ErrorComponent,
-        canActivate: [maintenanceGuard],
+        canActivate: [MaintenanceGuard],
     },
     {
         path: '**',

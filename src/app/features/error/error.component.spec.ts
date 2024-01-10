@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { ErrorComponent } from './error.component'
 
 describe('ErrorComponent', () => {
+    console.log('ErrorComponent test - INIT')
     let component: ErrorComponent
     let fixture: ComponentFixture<ErrorComponent>
 
@@ -17,6 +18,8 @@ describe('ErrorComponent', () => {
     })
 
     it('should create', () => {
+        console.log('ErrorComponent - should create')
         expect(component).toBeTruthy()
     })
+    console.log('ErrorComponent test - STOP')
 })

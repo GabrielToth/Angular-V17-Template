@@ -27,29 +27,29 @@ import type { User } from './User'
             </div>
             <div>
                 @if (user) {
-                <span class="welcome">
-                    Welcome, <b>{{ user.name }} </b>!
-                </span>
-                <app-storybook-button
-                    *ngIf="user"
-                    size="small"
-                    (onClick)="handleLogout.emit($event)"
-                    label="Log out">
-                </app-storybook-button>
+                    <span class="welcome">
+                        Welcome, <b>{{ user.name }} </b>!
+                    </span>
+                    <app-storybook-button
+                        *ngIf="user"
+                        size="small"
+                        (onClick)="handleLogout.emit($event)"
+                        label="Log out">
+                    </app-storybook-button>
                 } @else {
-                <app-storybook-button
-                    *ngIf="!user"
-                    size="small"
-                    class="margin-left"
-                    (onClick)="handleLogin.emit($event)"
-                    label="Log in"></app-storybook-button>
-                <app-storybook-button
-                    *ngIf="!user"
-                    size="small"
-                    [primary]="primary"
-                    class="margin-left"
-                    (onClick)="handleCreateAccount.emit($event)"
-                    label="Sign up"></app-storybook-button>
+                    <app-storybook-button
+                        *ngIf="!user"
+                        size="small"
+                        class="margin-left"
+                        (onClick)="handleLogin.emit($event)"
+                        label="Log in"></app-storybook-button>
+                    <app-storybook-button
+                        *ngIf="!user"
+                        size="small"
+                        [primary]="primary"
+                        class="margin-left"
+                        (onClick)="handleCreateAccount.emit($event)"
+                        label="Sign up"></app-storybook-button>
                 }
             </div>
         </div>

@@ -1,8 +1,7 @@
 import { CanActivateFn, Router } from '@angular/router'
-import { SiteStatusService } from '../services/site-status.service'
+import { SiteStatusService } from '../../services/site-status.service'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const maintenanceGuard: CanActivateFn = (route, state) => {
+export const MaintenanceGuard: CanActivateFn = (route, state) => {
     const siteStatusService = new SiteStatusService()
 
     if (!siteStatusService.getIsSiteOnline()) {

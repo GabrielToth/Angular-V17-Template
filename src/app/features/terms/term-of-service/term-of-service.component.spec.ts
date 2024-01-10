@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { TermOfServiceComponent } from './term-of-service.component'
 
 describe('TermOfServiceComponent', () => {
+    console.log('TermOfServiceComponent test - INIT')
     let component: TermOfServiceComponent
     let fixture: ComponentFixture<TermOfServiceComponent>
 
@@ -17,6 +18,8 @@ describe('TermOfServiceComponent', () => {
     })
 
     it('should create', () => {
+        console.log('TermOfServiceComponent - should create')
         expect(component).toBeTruthy()
     })
+    console.log('TermOfServiceComponent test - STOP')
 })
