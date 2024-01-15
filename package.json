@@ -23,7 +23,7 @@
         "@angular/forms": "^17.0.7",
         "@angular/platform-browser": "^17.0.0",
         "@angular/platform-browser-dynamic": "^17.0.7",
-        "@angular/platform-server": "^17.0.7",
+        "@angular/platform-server": "^17.0.9",
         "@angular/router": "^17.0.0",
         "@angular/ssr": "^17.0.2",
         "json-server": "^0.17.4",
