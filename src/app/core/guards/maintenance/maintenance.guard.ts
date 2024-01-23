@@ -1,7 +1,7 @@
 import { CanActivateFn, Router } from '@angular/router'
 import { SiteStatusService } from '../../services/site-status.service'
 
-export const MaintenanceGuard: CanActivateFn = (route, state) => {
+export const MaintenanceGuard: CanActivateFn = () => {
     const siteStatusService = new SiteStatusService()
 
     if (!siteStatusService.getIsSiteOnline()) {

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
-import { CanActivateFn, Router, Routes } from '@angular/router'
+import { CanActivateFn, Router } from '@angular/router'
 import { Location } from '@angular/common'
 import { MaintenanceGuard } from './maintenance.guard'
 import { SiteStatusService } from '../../services/site-status.service'
