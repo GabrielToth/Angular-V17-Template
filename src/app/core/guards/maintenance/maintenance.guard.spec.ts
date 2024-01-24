@@ -1,4 +1,10 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
+import {
+    ComponentFixture,
+    TestBed,
+    fakeAsync,
+    tick,
+    waitForAsync,
+} from '@angular/core/testing'
 import { CanActivateFn, Router } from '@angular/router'
 import { Location } from '@angular/common'
 import { MaintenanceGuard } from './maintenance.guard'
@@ -20,7 +26,7 @@ describe('MaintenanceGuard', () => {
     let mockRouter: Router
     let location: Location
 
-    const executeGuard: CanActivateFn = (...guardParameters) =>
+    const maintenanceGuard: CanActivateFn = (...guardParameters) =>
         TestBed.runInInjectionContext(() =>
             MaintenanceGuard(...guardParameters)
         )
@@ -52,64 +58,28 @@ describe('MaintenanceGuard', () => {
     it('should be created', () => {
         console.log('MaintenanceGuard - should create')
 
-        expect(executeGuard).toBeTruthy()
+        expect(maintenanceGuard).toBeTruthy()
         fixture.whenStable().then(() => {
             console.log('LOCATION PATH: ' + location.path())
             expect(location.path()).toBe('/')
         })
     })
 
-    it('should block navigation when site is offline', waitForAsync(() => {
+    it('should block navigation when site is offline', fakeAsync(() => {
         console.log(
             'MaintenanceGuard - should block navigation when site is offline'
         )
         mockSiteStatusService.setIsSiteOnline(false)
         maintenanceFixture.detectChanges()
 
+        console.log('maintenanceGuard: ', maintenanceGuard)
         expect(mockSiteStatusService.getIsSiteOnline()).toBeFalsy()
+        tick()
         fixture.detectChanges()
         fixture.whenStable().then(() => {
             console.log('LOCATION PATH: ' + location.path())
             // Check if the guard properly redirects to /maintenance when the site is offline
-            // expect(location.path()).toBe('/maintenance')
+            // expect(location.path()).toBe('/maintenance') // Remove this comment here
         })
     }))
-
-    // it('should redirect to /maintenance when site is offline', () => {
-    //     console.log(
-    //         'MaintenanceGuard - should redirect to /maintenance when site is offline'
-    //     )
-    //     mockSiteStatusService.setIsSiteOnline(false)
-    //     fixture.detectChanges()
-
-    //     console.log('MOCK ROUTER URL - ' + mockRouter.url)
-
-    //     console.log(
-    //         'TEXT CONTENT - ' + fixture.debugElement.nativeElement.textContent
-    //     )
-    // })
-
-    // it('should allow navigation when site is online', () => {
-    //     // mockSiteStatusService.setIsSiteOnline(true) // It is already set to true by default
-    //     console.log(
-    //         'MaintenanceGuard - should allow navigation when site is online'
-    //     )
-
-    //     expect(mockSiteStatusService.getIsSiteOnline()).toBeTruthy()
-    //     expect(fixture.debugElement.nativeElement.textContent).toContain(
-    //         'home works!'
-    //     )
-    // })
-
-    // it('should load HomeComponent from router in AppComponent when site is online', () => {
-    //     console.log(
-    //         'MaintenanceGuard - should load HomeComponent from router in AppComponent when site is online'
-    //     )
-
-    //     console.log(fixture.debugElement.nativeElement.textContent)
-
-    //     expect(fixture.debugElement.nativeElement.textContent).toContain(
-    //         'home works!'
-    //     )
-    // })
 })

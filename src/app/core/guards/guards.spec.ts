@@ -13,7 +13,7 @@ describe('Functional Guards', () => {
     let router: Router
     let siteStatusService: SiteStatusService
 
-    const executeGuard: CanActivateFn = (...guardParameters) =>
+    const maintenanceGuard: CanActivateFn = (...guardParameters) =>
         TestBed.runInInjectionContext(() =>
             MaintenanceGuard(...guardParameters)
         )
