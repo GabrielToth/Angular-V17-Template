@@ -45,7 +45,7 @@
         "@storybook/addon-essentials": "^7.5.3",
         "@storybook/addon-interactions": "^7.5.3",
         "@storybook/addon-links": "^7.5.3",
-        "@storybook/angular": "^7.5.3",
+        "@storybook/angular": "^7.6.14",
         "@storybook/blocks": "^7.5.3",
         "@storybook/testing-library": "^0.2.2",
         "@types/jest": "^29.5.11",
