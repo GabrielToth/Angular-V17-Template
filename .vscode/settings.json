@@ -2,28 +2,28 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
+            "source.fixAll.eslint": "explicit"
         },
         "editor.formatOnSave": true
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
+            "source.fixAll.eslint": "explicit"
         },
         "editor.formatOnSave": true
     },
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
+            "source.fixAll.eslint": "explicit"
         },
         "editor.formatOnSave": true
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
+            "source.fixAll.eslint": "explicit"
         },
         "editor.formatOnSave": true
     },
@@ -33,9 +33,7 @@
     "typescript.format.semicolons": "remove",
     "vs-code-prettier-eslint.prettierLast": true,
     "cSpell.language": "en,pt,pt_BR",
-    "cSpell.words": [
-        "Parens"
-    ],
+    "cSpell.words": ["Parens"],
     "[css][html][scss][typescript]": {
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": "explicit"
