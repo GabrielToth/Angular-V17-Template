@@ -52,7 +52,7 @@
         "@storybook/addon-interactions": "^8.1.6",
         "@storybook/addon-links": "^8.1.6",
         "@storybook/addon-mdx-gfm": "^8.1.6",
-        "@storybook/angular": "^8.1.6",
+        "@storybook/angular": "^8.1.9",
         "@storybook/blocks": "^8.1.6",
         "@storybook/test": "^8.1.6",
         "@types/jest": "^29.5.11",
