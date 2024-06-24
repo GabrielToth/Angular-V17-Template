@@ -45,7 +45,7 @@
         "@angular-eslint/eslint-plugin-template": "17.5.2",
         "@angular-eslint/schematics": "17.5.2",
         "@angular-eslint/template-parser": "17.5.2",
-        "@angular/cli": "17.3.4",
+        "@angular/cli": "18.0.5",
         "@angular/compiler-cli": "17.3.11",
         "@chromatic-com/storybook": "^1.5.0",
         "@storybook/addon-essentials": "^8.1.6",
